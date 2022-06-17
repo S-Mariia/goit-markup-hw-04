@@ -115,22 +115,17 @@ img {
 .header-contacts-item:not(:last-child) {
     margin-right: 50px;
 }
-.header-contacts-item {
-    display: flex;
-    align-items: center;
-    color: var(--main-text-color);
-}
 
 .header-contacts-link {
-        display: inline-block;
+    display: flex;
+        align-items: center;
         padding-top: 32px;
         padding-bottom: 32px;
-        color: currentColor;
+        color: var(--main-text-color);
 }
-.header-contacts-item:hover, .header-contacts-item:focus {
+.header-contacts-link:hover, .header-contacts-link:focus {
     color: var(--accent-color);
 }
-
 .active-page {
     color: var(--accent-color);
 }
@@ -297,6 +292,7 @@ display: flex;
 .team-list-subtitle {
     margin-bottom: 10px;
 
+        font-size: inherit;
         font-weight: 500;
         line-height: 1.19;
         text-align: center;
@@ -337,7 +333,7 @@ fill: currentColor;
     color: var(--main-background-color);
 }
 /*------------------------CLIENTS-----------------------------*/
-.clients .container {
+.clients {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -404,12 +400,10 @@ fill: currentColor;
 }
 .footer .container {
     display: flex;
+align-items: baseline;
 }
 .footer-adress {
     margin-right: 70px;
-}
-.footer-join {
-    margin-top: 12px;
 }
 footer .social-meadia-item:first-child {
     margin-left: 0;
